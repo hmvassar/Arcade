@@ -1,0 +1,122 @@
+body {
+    background-color: white;
+    font-family: Arial,sans-serif;
+    font-size: 75px;
+
+}
+
+h1 {
+    font-size: 90px;
+}
+
+#gameBoard {
+    text-align: center;
+    margin-top: 50px;
+    font-size: large;
+    color: blue;
+}
+
+.cell-Container {
+    font-size: 175px;
+    border: 5px solid red;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+    box-shadow: none;
+    color: blue;
+}
+
+.cell {
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 250px;
+    box-shadow: 0 0 0 2px;
+    justify-content: center;
+    color: blue;
+}
+
+#restartBtn {
+    border: 2px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 75px;
+    width: 125px;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+#messageDisplay {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 5px;
+    top: 15px;
+    ;
+    width: 275px;
+    height: 25px;
+    background-color: white;
+    margin-left: 40px;
+    margin-top: 25px;
+
+}
+
+.modal-content {
+    margin: 10% auto;
+    padding: 10px;
+    border: 5px solid;
+    height: auto;
+    color: blue;
+    background-color: tan;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+#modalBtn {
+    border: 1px;
+    cursor: pointer;
+    height: 75px;
+    width: 125px;
+    font-size: 25px;
+    margin-top: 10px;
+    display: none;
+}
+
+#submit {
+    border: 2px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 75px;
+    width: 125px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#player-one {
+    height: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#player-two {
+    height: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.close {
+    cursor: pointer;
+
+}

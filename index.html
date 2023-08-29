@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div id="gameBoard">
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" style="position:top-right;" onClick="closeModal()">&times; </span><br>
+                <label for="p1name">First Player:</label>
+                <input type="text" id="player-one" name="p1name">
+                <label for="p2name">Second Player:</label>
+                <input type="text" id="player-two" name="fname">
+                <button id="submit" type="submit" onclick="closeModal()">Submit</button>
+                </form>
+            </div>
+        </div>
+        <h1>Tic Tac Toe</h1>
+        <h2 id="messageDisplay">Ready to play?
+        </h2>
+        <div class="cell-Container">
+            <div class="cell" cellIndex="0"></div>
+            <div class="cell" cellIndex="1"></div>
+            <div class="cell" cellIndex="2"></div>
+            <div class="cell" cellIndex="3"></div>
+            <div class="cell" cellIndex="4"></div>
+            <div class="cell" cellIndex="5"></div>
+            <div class="cell" cellIndex="6"></div>
+            <div class="cell" cellIndex="7"></div>
+            <div class="cell" cellIndex="8"></div>
+        </div>
+        <button id="restartBtn" ;>Play again</button>
+        <script src="app.js"></script>
+</body>
+
+</html>
